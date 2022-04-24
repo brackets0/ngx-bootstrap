@@ -5,8 +5,18 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports: [ 
+    BrowserModule, 
+    FormsModule, 
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
+    TooltipModule.forRoot(),
+  ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
